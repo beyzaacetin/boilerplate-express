@@ -17,6 +17,11 @@ app.use("/public", express.static(__dirname + "/public"))
 //  res.sendFile(__dirname + '/views/index.html')
 // })
 
+//#5
+app.get("/json", (req,res) => {
+ res.json({"message": "Hello json"})
+})
+
 
 
 
